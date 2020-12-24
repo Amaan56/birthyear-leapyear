@@ -16,6 +16,14 @@ const year = parseInt(yearInput);
 
 if (year % 400 === 0 || (year % 4 === 0 && year % 100 != 0)) {
   console.log(chalk.green('Your birth year ' + year + ' is a leap year'));
+  console.log(
+    chalk.cyanBright('When others will be 40 you will be just 10 years of old!')
+  );
 } else {
   console.log(chalk.green('Your birth year ' + year + ' is not a leap year'));
+  console.log(
+    chalk.cyanBright(
+      'You are lucky you get to celebrate your birthday every year!'
+    )
+  );
 }
